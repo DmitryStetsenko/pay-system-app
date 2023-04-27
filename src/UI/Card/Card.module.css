@@ -1,0 +1,70 @@
+.card {
+    --size-modif: 1;
+    --size-ratio: 1.6;
+    --card-width: calc(400px * var(--size-modif));
+    /* --card-height: calc(var(--card-width) / var(--size-ratio)); */
+    --font-size: calc(1rem * var(--size-modif));
+  
+    --chip-size: calc(50px * var(--size-modif));
+    --signal-size: calc(30px * var(--size-modif));
+  
+    --padding: calc(20px * var(--size-modif));
+    --padding-left: calc(40px * var(--size-modif));
+    --m-1: calc(10px * var(--size-modif));
+    --mb-1: calc(10px * var(--size-modif));
+    --mb-2: calc(20px * var(--size-modif));
+    --brd: calc(30px * var(--size-modif));
+  
+    width: var(--card-width);
+    /* height: var(--card-height); */
+    border-radius: var(--brd);
+    background: #18191b;
+    color: silver;
+    padding: var(--padding);
+    padding-left: var(--padding-left);
+    font-size: var(--font-size);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    margin: var(--m-1);
+}
+
+  .bankName {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: var(--mb-1);
+  }
+  .iconBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--mb-2);;
+  }
+  .chip {
+    width: var(--chip-size);
+  }
+  .signal {
+    width: var(--signal-size);
+    transform: rotate(90deg);
+  }
+  .number {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    margin-bottom: var(--mb-1);;
+  }
+  .date {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: var(--mb-1);;
+  }
+  .titleBlock {
+    font-size: .7em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .valueBlock {
+    font-size: 1.2em;
+  }
+  .user {
+    text-transform: uppercase;
+  }
