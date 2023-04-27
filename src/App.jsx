@@ -1,5 +1,6 @@
-import './App.css';
+import { Home, Cards, Contragents } from './pages';
 import Card from './UI/Card';
+import './App.css';
 
 function App() {
   return (
